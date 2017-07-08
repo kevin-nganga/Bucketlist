@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home | Bucketlist</title>
+      <link rel="stylesheet" href="../assets/css/bootstrap.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-default">
+         <div class="container">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#">GOLO</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+            </ul>
+         </div>
+      </nav>
+      <form class="form-horizontal" action="index.html" method="post">
+         <div class="form-group">
+            <div class="col-sm-6 col-md-offset-3">
+               <h1>Activities
+                  <small>What would you like to do in the next few years?</small>
+               </h1>
+               <input data-toggle="tooltip" title="Press Enter to save this activity" type="text" class="form-control"
+                  placeholder="Add activity">
+            </div>
+         </div>
+         <div class="form-group">
+            <div class="col-sm-6 col-md-offset-3">
+               <table id="activities" class="table table-hover table-striped">
+                  <tbody class="activity-list">
+                     <tr>
+                        <td><del>Teach penguins to fly</del></td>
+                        <td>
+                           <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                           <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Learn to ride a bike</td>
+                        <td>
+                           <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                           <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>some activity</td>
+                        <td>
+                           <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                           <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </form>
+      <script src="../assets/js/bootstrap.js"></script>
+   </body>
+</html>
