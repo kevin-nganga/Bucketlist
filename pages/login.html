@@ -1,3 +1,9 @@
+<!--
+Design wise, could be better. Inputs are too long
+Below is ok
+https://bootsnipp.com/snippets/ND7mz
+-->
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -14,7 +20,7 @@
             </div>
          </div>
       </nav>
-      <form class="form-horizontal" action="index.html" method="post">
+      <form class="form-horizontal" action="../index.html" method="post">
          <div class="form-group">
             <div class="col-sm-6 col-md-offset-3">
                <h1 class="page-header" align="center">Log In</h1>
@@ -23,15 +29,25 @@
          <div class="form-group">
             <div class="col-sm-6 col-md-offset-3">
                <label for="name">Username</label>
-               <input type="text" class="form-control" id="name" name="user_name" placeholder="Username">
+<!--
+ALWAYS GOOD TO INCLUDE autocomplete="off". This prevents others from viewing credentials initially used.
+https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion
+-->
+               <input type="text" class="form-control" id="name" name="user_name" placeholder="Username" autocomplete="off">
             </div>
          </div>
+<!--
+Validate length and special characters.
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password
+http://www.the-art-of-web.com/javascript/validate-password/
+-->
          <div class="form-group">
             <div class="col-sm-6 col-md-offset-3">
                <label for="password">Password</label><a href="#">(Forgot password?)</a>
                <input type="password" class="form-control" id="password" name="user_password" placeholder="Password">
             </div>
          </div>
+<!--ONLY HAVE THIS IF NECESSARY, BUT NORMALLY NOT RECOMMENDED FOR SECURITY REASONS.-->
          <div class="form-group">
             <div class="col-sm-6 col-md-offset-3">
                <div class="checkbox">
@@ -41,6 +57,10 @@
                </div>
             </div>
          </div>
+<!--
+During implementation for login or register button, look at
+https://developer.mozilla.org/en/docs/Web/API/Event/preventDefault
+-->
          <div class="form-group">
             <div class="col-sm-6 col-md-offset-3">
                <button class="btn btn-default" type="submit">Log In</button>
@@ -52,6 +72,7 @@
             </div>
          </div>
       </form>
+      <script src="../assets/js/jquery-3.2.1.min.js"></script>
       <script src="../assets/js/bootstrap.js"></script>
    </body>
 </html>
